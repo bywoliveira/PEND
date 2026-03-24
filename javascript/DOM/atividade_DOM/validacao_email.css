@@ -1,0 +1,25 @@
+body{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+input{
+    border: 20px;
+    border-radius: 30px;
+    color:blueviolet
+    
+}
+button{
+    border: 20px;
+    border-radius: 30px;
+    background-color: rgb(229, 144, 229);
+}
+/* .icone{
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 25%;
+} */

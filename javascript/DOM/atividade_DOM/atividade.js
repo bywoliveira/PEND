@@ -2,14 +2,18 @@
 let vermelho = document.querySelector("#vermelho");
 let texto = document.querySelector("#texto");
 let azul = document.querySelector("#azul")
+// seletor para cada id
 
 //coloque se é classe ou id apos usa o query selector
 
 azul.addEventListener("click", function () {
     texto.style.color = "blue";
+    // quando executa uma ação pelo click, ai tem um evento para quanfo clicar
+    //esse evento vai trocar a corpara azul
 });
 vermelho.addEventListener("click", function () {
     texto.style.color = "red";
+    // mesma coisa que o azul, faz um evento e define que quando clicar vai muda para vermelho
 });
 
 //-------------------------------------------------------------------
@@ -44,7 +48,7 @@ let clicks = document.querySelector('#clicks')
 let contador = 0;
 
 botao4.addEventListener("click", function () {
-    //ao inves do click é o keyup, ele ouve td q é digitado no teclado
+    
     contador += 1
     clicks.textContent = "Cliques: " + contador;
     //no input value é onde acontece a leitura de valores
