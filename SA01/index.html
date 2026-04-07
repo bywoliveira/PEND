@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- link para o olho da senha -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link do css -->
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <!-- link do favicon, um icone para colocar uma logo no site na aba do google -->
+</head>
+
+<body>
+    <section>
+        <h2>• Cadastro de Usuário •</h2>
+
+        <form>
+
+            <h4>Nome:</h4>
+            <input type="text" id="nome" placeholder="Digite um nome.."><br>
+            <p id="paragrafoh"></p>
+            <!-- Foi feito um input para o nome, onde já defini o id(para uso do js) e coloquei o placeholder -->
+            <!-- para aparecer uma mensagem que naquele input é o nome -->
+            <!-- o id "paragrafoh" é um id para aparecer uma mensagem caso o usuário não tenha preenchido seu nome -->
+
+            <h4>E-mail:</h4>
+            <input type="text" id="email" placeholder="Digite um e-mail.."><br>
+            <p id="mensagem_email"></p>
+            <!-- Foi criado um input e-mail, com id email para futuras verificações e um placeholder com mesmo intuito do de nome -->
+            <!-- um paragrafo mensagem_email, para mostra quando o e-mail está errado ou não preenchido -->
+
+            <h4>Senha:</h4>
+            <input type="password" id="senha" placeholder="Digite uma senha"><br>
+            <div>
+                <i class="bi bi-eye-fill icone" id="botao_olho"></i>
+            </div>
+            <p id="paragraf"></p>
+            <!-- foi criado um input para a senha,um id para js e placholder com o mesmo intuito do de nome -->
+            <!-- esse i é para o js e css da parte do olho, para que no js e css ele vai colocar a função dele e onde ele pode estar -->
+
+
+            <h4>Confirmar senha:</h4>
+            <input type="password" id="confirma_senha" placeholder="Confirme sua senha"><br>
+            <p id="confirma"></p>
+            <!-- mesmo intuito da senha, só que para confirma ela -->
+
+
+            <h4>Telefone:</h4>
+            <input type="number" id="telefone" placeholder="Digite um telefone">
+            <p id="mensagem_telefone"> </p>
+            <button id="botaoe" type="button">+</button><br><br>
+            <div id="campo"></div>
+            <br><br>
+            <!-- input para o telefone, com tipo número para ser apenas números -->
+            <!-- e um botão que com o js ele vai adicionar mais campos de telefones -->
+            <!-- e uma div com um id para esse campo do telefone aparecer nocamente -->
+
+            <button type="button" id="botao">Cadastrar</button>
+            <!-- pra clicar e vai ser o principal para as verificaçõs de campos vazios -->
+            <p id="mensagemfinal"></p>
+
+
+        </form>
+    </section>
+    <script src="script.js"></script>
+    <!-- link para o js conseguir aparecer  -->
+</body>
+
+</html>

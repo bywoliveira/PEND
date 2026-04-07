@@ -1,0 +1,39 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: antiquewhite;
+    display:flex;
+    justify-content: center;
+}
+/* no body tem a fonte e onde esse texto vai estar alinhado, no caso no centro */
+
+input {
+    padding: 5px;
+    width: 200px;
+    border-radius: 50px;
+}
+button{
+     padding: 5px;
+    width: 100px;
+    border-radius: 50px;
+    color:rgb(38, 38, 116)
+}
+
+
+section{
+    border: solid 2px;
+    width: 350px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: rgb(225, 221, 183);
+   
+}
+
+div {
+    position: relative;
+}
+.icone {
+    position: absolute;
+    left: 72%;
+    bottom: 4px;
+}
