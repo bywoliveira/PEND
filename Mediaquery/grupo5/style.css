@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -522,46 +522,50 @@ footer {
 /* Para desktop (acima de 577px) */
 @media (min-width: 577px) {
     .container-header {
+      padding: 20px 40px;  
         
     }
 
     .inicio {
+        padding: 100px 40px;
         
     }
 
     .boas-vindas {
-        
+        gap: 60px;
     }
 
     .sobre-nos {
-        
+        padding: 80px 40px;
     }
 
     .sobre-nos .historia {
-        
+        gap: 60px;
     }
 
     .cardapio {
+        padding: 100px 40px;
         
     }
 
     .div-cardapio {
-        
+        gap: 32px;
     }
 
     .pedido {
-        
+        padding: 80px 40px;
     }
 
     .pedido-conteudo {
-        
+        gap: 60px;
     }
 
     .contato {
-        
+        padding: 80px 40px;
     }
 
     .possuimos {
-        
+        gap: 24px;
+        padding: 60px 40px;
     }
 }
