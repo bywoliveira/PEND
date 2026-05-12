@@ -679,35 +679,37 @@ footer .logo-footer span {
    ============================================================ */
 @media (max-width: 64rem) {
   header {
-    
+    padding: 0 30px;
   }
 
   main {
-    
+    padding: 50px 30px;
   }
 
   #sobre {
-    
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .cards {
-    
+    grid-template-columns: 1fr 1fr;
   }
 
   .cards .card:last-child {
-    
+    grid-column: span 2;
   }
 
   footer {
-    
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 30px;
   }
 
   footer > div:first-child {
-    
+    grid-column: span 2;
   }
 
   #franqueado {
-    
+    padding: 40px 36px;
   }
 }
 
