@@ -5,179 +5,293 @@
     <meta charset="UTF-8">
     <title>NewsToday</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 
 <body>
+    <!-- ------------------------Inicio do header------------------------>
     <header>
-        <h1>NewsToday</h1>
 
-        <ul class="menu">
-            <a href="#">Início</a>
-            <a href="#">Tecnologia</a>
-            <a href="#">Esportes</a>
-            <a href="#">Economia</a>
-            <a href="#">Contato</a>
-        </ul>
-    </header>
-    <main>
-
-        <section>
-
+        <section class="logo">
+            <div>
+                <img src="img/nova_logo.png" alt="logo News Today">
+            </div>
+            <!-- <h1>NewsToday - o seu portal de notícias</h1> -->
+            <input type="text" placeholder="Pesquisar notícias...">
         </section>
+
+
+
+        <nav class="menu">
+            <a href="#tecnologia">Tecnologia</a>
+            <a href="#esportes">Esportes</a>
+            <a href="#economia">Economia</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+    <!--------------- fim do header --------------------------------->
+    <!-- começo do principal -->
+    <main>
 
         <div class="conteudo">
 
-            <!-- COLUNA ESQUERDA (65%) -->
+            <!-- apenas noticias que estão na esquerda da página -->
+            <!-- noticias de tecnologia inicio-->
             <div class="noticias-esquerda">
+                <!-- -----------------------inicio da sessão de tecnologia---------------------------------------------------- -->
+                <section>
+                    <article id="tecnologia" class="espaco_noticia">
+                        <div class="dentro_noticia">
+                            <h4>IA do Facebook vira 'buscador' e vai usar posts de usuários para dar respostas;
+                                entenda</h4>
+                            <p>A Meta, dona do Facebook e do Instagram, anunciou na segunda-feira (15) o lançamento
+                                do "AI
+                                Mode", uma ferramenta de busca dentro do Meta AI que vai dar respostas baseadas em
+                                conteúdos
+                                compartilhados publicamente por outras pessoas em aplicativos da empresa...</p>
+                        </div>
+                        <div class="imagem_noticia">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRmFcjw4WH5dVKgV-v5zosZQDssnmM7PpZ8GAXPZfZLLZQ_v4weWkh0_c&s=10"
+                                alt="ia-para-facebook-e-instagram">
+                        </div>
+                    </article>
+                    <!-------------------- fim da primeira noticia -------------------------->
+                    <!-- inicio da segunda noticia -->
 
-                <div class="espaco_noticia">
-                    <div class="dentro_noticia">
-                        <h4>IA do Facebook vira 'buscador' e vai usar posts de usuários para dar respostas; entenda</h4>
-                        <p>A Meta, dona do Facebook e do Instagram, anunciou na segunda-feira (15) o lançamento do "AI
-                            Mode", uma ferramenta de busca dentro do Meta AI que vai dar respostas baseadas em conteúdos
-                            compartilhados publicamente por outras pessoas em aplicativos da empresa...</p>
-                    </div>
-                    <div class="imagem_noticia">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRmFcjw4WH5dVKgV-v5zosZQDssnmM7PpZ8GAXPZfZLLZQ_v4weWkh0_c&s=10"
-                            alt="ia-para-facebook-e-instagram">
-                    </div>
-                </div>
-                <div class="espaco_noticia">
-                    <div class="dentro_noticia">
-                        <h4>Após IPO da SpaceX, Musk anuncia que vai comprar empresa de IA</h4>
-                        <p>A SpaceX, empresa do trilionário Elon Musk, anunciou nesta terça-feira (16) a compra da Anysphere, dona do Cursor, uma ferramenta de inteligência artificial usada para programar códigos. O negócio foi fechado por US$ 60 bilhões e reforça a aposta da companhia no mercado corporativo de IA...</p>
-                    </div>
-                    <div class="imagem_noticia">
-                        <img src="https://monitordomercado.com.br/wp-content/uploads/2026/06/SpaceX.jpeg"
-                            alt="IPO -spacex">
-                    </div>
-                </div>
-                <div class="espaco_noticia">
-                    <div class="dentro_noticia">
-                        <h4>OpenAI derrota ação da xAI sobre suposto roubo de segredos comerciais</h4>
-                        <p>A Meta, dona do Facebook e do Instagram, anunciou na segunda-feira (15) o lançamento do "AI
-                            Mode", uma ferramenta de busca dentro do Meta AI que vai dar respostas baseadas em conteúdos
-                            compartilhados publicamente por outras pessoas em aplicativos da empresa...</p>
-                    </div>
-                    <div class="imagem_noticia">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRmFcjw4WH5dVKgV-v5zosZQDssnmM7PpZ8GAXPZfZLLZQ_v4weWkh0_c&s=10"
-                            alt="ia-para-facebook-e-instagram">
-                    </div>
-                </div>
-                <div class="espaco_noticia">
-                    <div class="dentro_noticia">
-                        <h4>IA do Facebook vira 'buscador' e vai usar posts de usuários para dar respostas; entenda</h4>
-                        <p>A Meta, dona do Facebook e do Instagram, anunciou na segunda-feira (15) o lançamento do "AI
-                            Mode", uma ferramenta de busca dentro do Meta AI que vai dar respostas baseadas em conteúdos
-                            compartilhados publicamente por outras pessoas em aplicativos da empresa...</p>
-                    </div>
-                    <div class="imagem_noticia">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRmFcjw4WH5dVKgV-v5zosZQDssnmM7PpZ8GAXPZfZLLZQ_v4weWkh0_c&s=10"
-                            alt="ia-para-facebook-e-instagram">
-                    </div>
-                </div>
-                <div class="espaco_noticia">
-                    <div class="dentro_noticia">
-                        <h4>IA do Facebook vira 'buscador' e vai usar posts de usuários para dar respostas; entenda</h4>
-                        <p>A Meta, dona do Facebook e do Instagram, anunciou na segunda-feira (15) o lançamento do "AI
-                            Mode", uma ferramenta de busca dentro do Meta AI que vai dar respostas baseadas em conteúdos
-                            compartilhados publicamente por outras pessoas em aplicativos da empresa...</p>
-                    </div>
-                    <div class="imagem_noticia">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRmFcjw4WH5dVKgV-v5zosZQDssnmM7PpZ8GAXPZfZLLZQ_v4weWkh0_c&s=10"
-                            alt="ia-para-facebook-e-instagram">
-                    </div>
-                </div>
-                <div class="espaco_noticia">
-                    <div class="dentro_noticia">
-                        <h4>IA do Facebook vira 'buscador' e vai usar posts de usuários para dar respostas; entenda</h4>
-                        <p>A Meta, dona do Facebook e do Instagram, anunciou na segunda-feira (15) o lançamento do "AI
-                            Mode", uma ferramenta de busca dentro do Meta AI que vai dar respostas baseadas em conteúdos
-                            compartilhados publicamente por outras pessoas em aplicativos da empresa...</p>
-                    </div>
-                    <div class="imagem_noticia">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRmFcjw4WH5dVKgV-v5zosZQDssnmM7PpZ8GAXPZfZLLZQ_v4weWkh0_c&s=10"
-                            alt="ia-para-facebook-e-instagram">
-                    </div>
-                </div>
-                <div class="espaco_noticia">
-                    <div class="dentro_noticia">
-                        <h4>IA do Facebook vira 'buscador' e vai usar posts de usuários para dar respostas; entenda</h4>
-                        <p>A Meta, dona do Facebook e do Instagram, anunciou na segunda-feira (15) o lançamento do "AI
-                            Mode", uma ferramenta de busca dentro do Meta AI que vai dar respostas baseadas em conteúdos
-                            compartilhados publicamente por outras pessoas em aplicativos da empresa...</p>
-                    </div>
-                    <div class="imagem_noticia">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRmFcjw4WH5dVKgV-v5zosZQDssnmM7PpZ8GAXPZfZLLZQ_v4weWkh0_c&s=10"
-                            alt="ia-para-facebook-e-instagram">
-                    </div>
-                </div>
+                    <article class="espaco_noticia">
+                        <div class="dentro_noticia">
+                            <h4>Após IPO da SpaceX, Musk anuncia que vai comprar empresa de IA</h4>
+                            <p>A SpaceX, empresa do trilionário Elon Musk, anunciou nesta terça-feira (16) a compra
+                                da
+                                Anysphere, dona do Cursor, uma ferramenta de inteligência artificial usada para
+                                programar
+                                códigos. O negócio foi fechado por US$ 60 bilhões e reforça a aposta da companhia no
+                                mercado
+                                corporativo de IA...</p>
+                        </div>
+                        <div class="imagem_noticia">
+                            <img src="https://monitordomercado.com.br/wp-content/uploads/2026/06/SpaceX.jpeg"
+                                alt="IPO -spacex">
+                        </div>
+                    </article>
+                    <!-- fim da segunda noticia -->
+                </section>
+                <!------------------ fim noticias de tecnologia apenas do lado esquerdo --------------------------------->
 
-                
 
+                <!------------------ inicio da sessão de esportes do lado esquerdo ----------------------->
+                <section>
+                    <!-- inicio da primeira noticia de esportes -->
+                    <article class="espaco_noticia">
+
+                        <div id="esportes" class="dentro_noticia">
+                            <h4>Messi é o único jogador a carregar seis emblemas especiais no uniforme nesta Copa;
+                                entenda</h4>
+                            <p>Lionel Messi agora ocupa o Olimpo da artilharia em Copas do Mundo ao lado de Miroslav
+                                Klose, ambos com 16 gols marcados. Após o hat-trick contra a Argélia, nesta
+                                terça-feira, o craque argentino alcançou o alemão em sua quinta participação em
+                                Mundiais....</p>
+                        </div>
+                        <div class="imagem_noticia">
+                            <img src="https://s2-oglobo.glbimg.com/oFxFUhg5DVK13hTQ5alFoyyD0_o=/0x0:7990x5327/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2026/n/Q/3BNKzMQpm94vT981ckOw/roberto-schmidt-afp.jpg"
+                                alt="messi">
+                        </div>
+                    </article>
+                    <!-- fim da primeira noticia de esportes -->
+                    <!-- inicio segunda noticia de esportes -->
+                    <article class="espaco_noticia">
+                        <div class="dentro_noticia">
+                            <h4>Henry critica Cristiano Ronaldo: 'O time precisa fazer gol, não você'</h4>
+                            <p>O ex-atacante Thierry Henry criticou Cristiano Ronaldo após o empate de Portugal com
+                                a RD Congo por 1 a 1, ontem, pela primeira rodada do Grupo K da Copa do Mundo ...
+                            </p>
+                        </div>
+                        <div class="imagem_noticia">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFTu0q2CWQSX7l3AC02ng_Ztw6LODZOMGDlUrLcO2wjA&s=10"
+                                alt="Cristiano Ronaldo">
+                        </div>
+                    </article>
+                    <!-- fim da segunda noticia de esportes -->
+                </section>
+                <!-- fim da sessão de esportes do lado esquerdo -->
+
+
+                <!-- inicio da sessão de economia  do lado esquerdo-->
+                <section>
+                    <!-- inicio da primeira noticia de economia -->
+                    <article id="economia" class="espaco_noticia">
+                        <div class="dentro_noticia">
+                            <h4>Projeto reconhece importância dos panificadores para a economia brasileira</h4>
+                            <p>A Comissão de Assuntos Sociais (CAS) promoveu audiência pública sobre o Projeto de
+                                Lei
+                                3.432/2024, que institui o Dia Nacional do Panificador. O debate destacou a
+                                importância
+                                econômica e social do setor de panificação, responsável por milhões de empregos e
+                                presente no cotidiano de milhões de brasileiros. ...</p>
+                        </div>
+                        <div class="imagem_noticia">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo4E_hixefgiUwEPXRqADq0avlHGLPf6TYf5JFgjtGOYQiKQSWOcfmpyY&s=10"
+                                alt="Panificador">
+                        </div>
+                    </article>
+                    <!-- fim da primeira  noticia de economia-->
+                    <!-- inicio da segunda noticia de economia -->
+                    <article class="espaco_noticia">
+                        <div class="dentro_noticia">
+                            <h4>Bolsa Família injeta R$ 99,9 milhões na economia do Tocantins</h4>
+                            <p>O pagamento do Bolsa Família referente ao mês de junho começa nesta quarta-feira, 17,
+                                para 144.029 famílias no Tocantins. O repasse do Governo Federal vai injetar mais de
+                                R$
+                                99,9 milhões na economia dos 139 municípios do estado, garantindo um benefício médio
+                                de
+                                R$ 694,66 por núcleo familiar. O cronograma segue até o dia 30, variando conforme o
+                                final do Número de Identificação Social (NIS)...</p>
+                        </div>
+                        <div class="imagem_noticia">
+                            <img src="https://s.t1noticias.com.br/files/cache/2026/187e62be3273736d6046710634e31cc4.jpeg"
+                                alt="bolsa-familia">
+                        </div>
+                    </article>
+                    <!-- fim da segunda noticia de economia -->
+
+                    <article>
+                        <div class="espaco_noticia">
+                            <div class="dentro_noticia">
+                                <h4>Juliana Rosa: BC está cortando juros devagar por causa da alta da inflação</h4>
+                                <p>O Comitê de Política Monetária (Copom) do Banco Central anunciou nesta quarta-feira
+                                    (17)
+                                    uma nova redução na taxa básica de juros do país. O corte de 0,25 ponto percentual
+                                    faz a
+                                    Selic recuar de 14,5% para 14,25% ao ano. A medida era aguardada por analistas do
+                                    setor
+                                    financeiro, mas indica um ritmo desacelerado na flexibilização da política monetária
+                                    devido às pressões inflacionárias....</p>
+                            </div>
+                            <div class="imagem_noticia">
+                                <img src="https://img.band.com.br/image/2025/12/27/banco-central-113846.webp"
+                                    alt="prédio">
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div id="contato" class="espaco_noticia">
+                            <div class="dentro_noticia">
+                                <h4>Contato</h4>
+                                <p> E-mail: contato@newstoday.com</p>
+
+                                  
+                                    <p>Comercial e Publicidade: comercial@newstoday.com</p>
+
+                                    <p>Suporte: suporte@newstoday.com
+                                    Dúvidas técnicas, problemas de acesso e feedback sobre o site</p>
+                            </div>
+                            <div class="imagem_noticia">
+                                <img src="https://img.magnific.com/vetores-gratis/contacte-nos-botoes-definidos_78370-9250.jpg?semt=ais_hybrid&w=740&q=80"
+                                    alt="contato">
+                            </div>
+                        </div>
+                    </article>
             </div>
 
-            <!-- COLUNA DIREITA (35%) -->
+
+
+            <!------------------------------------- início  notícias do lado direito  --------------------------------------->
             <div class="noticias-direita">
+                <section>
+                    <!-- inicio primeira noticia do lado direito -->
+                    <article class="espaco_noticia">
+                        <div class="dentro_noticia">
+                            <h4>Olhar do Amanhã: Brasil tem condições de criar uma IA nacional?</h4>
+                            <p>O caso envolvendo o Rio Open 3.5 surge em um cenário de domínio das IAs pelos países
+                                mais
+                                ricos e de discussões sobre a “tropicalização” desses modelos. Mas o que isso
+                                significa na
+                                prática?
 
-                <div class="espaco_noticia">
-                    <div class="dentro_noticia">
-                        <h4>IA do Facebook vira 'buscador' e vai usar posts de usuários para dar respostas; entenda</h4>
-                        <p>A Meta, dona do Facebook e do Instagram, anunciou na segunda-feira (15) o lançamento do "AI
-                            Mode", uma ferramenta de busca dentro do Meta AI que vai dar respostas baseadas em conteúdos
-                            compartilhados publicamente por outras pessoas em aplicativos da empresa...</p>
-                    </div>
-                    <div class="imagem_noticia">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRmFcjw4WH5dVKgV-v5zosZQDssnmM7PpZ8GAXPZfZLLZQ_v4weWkh0_c&s=10"
-                            alt="ia-para-facebook-e-instagram">
-                    </div>
-                </div>
+                                Esse episódio mostra que o Brasil ainda não é competitivo em modelos fundacionais? E
+                                quais
+                                seriam os caminhos para superar essa limitação?...</p>
+                        </div>
+                        <div class="imagem_noticia">
+                            <img src="
+                        https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwhqKEa222dQv3t4j0EjwGvCxEjZV-oaaxbURl4egQ9Q&s=10"
+                                alt="ia-do-brasil">
+                        </div>
+                    </article>
+                    <!-- fim da primeira noticia -->
+                </section>
 
-                <div class="espaco_noticia">
-                    <div class="dentro_noticia">
-                        <h4>IA do Facebook vira 'buscador' e vai usar posts de usuários para dar respostas; entenda</h4>
-                        <p>A Meta, dona do Facebook e do Instagram, anunciou na segunda-feira (15) o lançamento do "AI
-                            Mode", uma ferramenta de busca dentro do Meta AI que vai dar respostas baseadas em conteúdos
-                            compartilhados publicamente por outras pessoas em aplicativos da empresa...</p>
-                    </div>
-                    <div class="imagem_noticia">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRmFcjw4WH5dVKgV-v5zosZQDssnmM7PpZ8GAXPZfZLLZQ_v4weWkh0_c&s=10"
-                            alt="ia-para-facebook-e-instagram">
-                    </div>
-                </div>
-                <div class="espaco_noticia">
-                    <div class="dentro_noticia">
-                        <h4>IA do Facebook vira 'buscador' e vai usar posts de usuários para dar respostas; entenda</h4>
-                        <p>A Meta, dona do Facebook e do Instagram, anunciou na segunda-feira (15) o lançamento do "AI
-                            Mode", uma ferramenta de busca dentro do Meta AI que vai dar respostas baseadas em conteúdos
-                            compartilhados publicamente por outras pessoas em aplicativos da empresa...</p>
-                    </div>
-                    <div class="imagem_noticia">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRmFcjw4WH5dVKgV-v5zosZQDssnmM7PpZ8GAXPZfZLLZQ_v4weWkh0_c&s=10"
-                            alt="ia-para-facebook-e-instagram">
-                    </div>
-                </div>
-                <div class="espaco_noticia">
-                    <div class="dentro_noticia">
-                        <h4>IA do Facebook vira 'buscador' e vai usar posts de usuários para dar respostas; entenda</h4>
-                        <p>A Meta, dona do Facebook e do Instagram, anunciou na segunda-feira (15) o lançamento do "AI
-                            Mode", uma ferramenta de busca dentro do Meta AI que vai dar respostas baseadas em conteúdos
-                            compartilhados publicamente por outras pessoas em aplicativos da empresa...</p>
-                    </div>
-                    <div class="imagem_noticia">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRmFcjw4WH5dVKgV-v5zosZQDssnmM7PpZ8GAXPZfZLLZQ_v4weWkh0_c&s=10"
-                            alt="ia-para-facebook-e-instagram">
-                    </div>
-                </div>
-               
+                <section>
+                    <!-- inicio segunda noticia -->
+                    <article class="espaco_noticia">
+
+                        <div class="dentro_noticia">
+                            <h4>Neymar treina separado de elenco e segue como dúvida contra o Haiti</h4>
+                            <p>Neymar marcou presença em treino da Seleção Brasileira nesta quarta-feira (17), no CT
+                                Columbia Park, nos Estados Unidos. O camisa 10 participou das atividades no gramado,
+                                mas
+                                ainda realizou trabalhos físicos separados do restante do elenco.
+
+                                Segundo informações apuradas pela CNN, o atacante iniciou os primeiros dias da fase
+                                de
+                                transição física após o tratamento da lesão ...</p>
+                        </div>
+                        <div class="imagem_noticia">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFhHqcjWcQyj1otT8whHepIRqVuYGjH9BnhdYEiA5R3jdMQyPurZgIr26P&s=10"
+                                alt="ia-para-facebook-e-instagram">
+                        </div>
+
+                    </article>
+                    <!-- fim segunda noticia -->
+
+
+                    <!--  inicio terceira noticia-->
+                    <article class="espaco_noticia">
+                        <div class="dentro_noticia">
+                            <h4>Ancelotti tem três dilemas centrais para resolver antes de Brasil x Haiti</h4>
+                            <p>Carlo Ancelotti chega à segunda rodada da Copa do Mundo com três dilemas centrais
+                                para
+                                resolver na seleção brasileira. Depois do decepcionante empate por 1 a 1 com
+                                Marrocos na
+                                estreia, o treinador sabe que precisa de uma vitória contra o Haiti, às 21h30 (de
+                                Brasília),
+                                para evitar que a pressão aumente ainda mais sobre sua equipe...</p>
+                        </div>
+                        <div class="imagem_noticia">
+                            <img src="https://conteudo.imguol.com.br/c/esporte/bd/2026/06/15/carlo-ancelotti-em-treinamento-da-selecao-brasileira-para-a-copa-do-mundo-de-2026-em-morristown-nos-eua-1781578115678_v2_450x450.jpg.webp"
+                                alt="carlo-ancelotti-em-treinamento-da-selecao-brasileira-para-a-copa-do-mundo-de-2026-em-morristown-nos-eua-1781578115678_v2_450x450">
+                        </div>
+                    </article>
+                    <!-- fim terceira noticia -->
+
+                    <section>
+                        <!-- inicio quarta notícia -->
+                        <article class="espaco_noticia">
+                            <div class="dentro_noticia">
+                                <h4>Conecta Gov.br impulsiona eficiência do Estado e gera economia de R$ 15 bilhões</h4>
+                                <p>Transformação Digital do Estado brasileiro vem apresentando mais resultados
+                                    concretos. O
+                                    Conecta Gov.br atingiu 2,55 bilhões de transações entre órgãos públicos e gerou uma
+                                    economia
+                                    estimada de R$ 15 bilhões desde 2020, segundo o Ministério da Gestão e da Inovação
+                                    em
+                                    Serviços Públicos (MGI)....</p>
+                            </div>
+                            <div class="imagem_noticia">
+                                <img src="https://midias-totvs.totvs.com/wp-content/uploads/2023/11/assinatura-digital-gov-br.jpg"
+                                    alt="ia-para-facebook-e-instagram">
+                            </div>
+                        </article>
+                        <!-- fim quarta noticia -->
             </div>
 
         </div>
-
-        <footer>
-            NewsToday © 2026
-        </footer>
     </main>
+
+
+    <footer>
+        NewsToday © 2026 - Informação em tempo real
+    </footer>
 </body>
 
 </html>
