@@ -1,0 +1,58 @@
+q1-Quais melhorias foram realizadas;
+Foi modificado quase todo o site inteiro, só o menu que ficou no mesmo espaço que estava antes.
+melhorias:
+- foi tirado o inicio da parte de menu, pois ele era redundante para o site
+- foi adicionado conteiners a todas as noticias, para ficarem padronizadas e semelhantes
+- foi colocado título e descrição das matérias para despertar interesse no usuário
+- todas as notícias que estavam anteriormente, sem qualidade, foram trocadas por novas notícias
+- as notícias de cada área ficaram juntas e não soltas cada uma
+- o site ficou um site moderno e não um site antigo
+- foi colocado uma logo, porque antes só tinha o nome da empresa
+- foi colocado um favicon, para o usuário identificar o site mesmo fora dele
+- foi colocado uma barra de notícias
+- foi retirado a cor do fotter, para ficar mais harmonico
+- foi adicionadoum contato para a empresa
+
+-----------------------------------------------..--------------------------------------------------------
+q2-Quais elementos semânticos foram utilizados;
+foram utilizados as tags:
+<p> para poder escrever os textos
+<h4>,<h2> para os títulos das notícias
+<footer> para o footer do final da página
+<article> para fazer o container de cada notícia
+<main> para quando chego a parte das notícias
+<header> para parte do menu
+<nav> para a parte que vai ter os "tópicos" de notícias
+<section> para diferenciar todas as sessões que tem gêneros diferentes
+--------------------------------------------------..----------------------------------------------------------
+
+
+q3-Quais Media Queries foram implementadas;
+foram implementadas as media query para desktop, tablet e celulares.
+
+@media (max-width: 768px) — em telas até 768px, o header vira coluna, a logo encolhe para 150px, o menu some e aparece o botão ☰ no lugar, e as notícias empilham em coluna única.
+
+@media (max-width: 900px) — em telas até 900px, as duas colunas do conteúdo (65/35) viram uma só, e as notícias também empilham. A imagem fica com 250px de altura.
+
+@media (max-width: 600px) — em telas até 600px, repete o ajuste do header em coluna e do menu hambúrguer, só que com valores menores de padding e logo menor (130px). Basicamente é o refinamento do que o de 768px já fez.
+
+@media (max-width: 400px) — em telas muito pequenas, o input de busca ocupa a largura toda e a imagem encolhe para 160px.
+
+
+-----------------------------------------------------..-------------------------------------------
+
+q4-Quais decisões de UX e UI foram adotadas.
+
+UI- decici deixar a paleta de cores entre branco, azul e preto no site, para diferenciar e realçar
+as imagens das notícias
+-nos topicos dos menus, ao clicar ele te leva para a sessão de onde você clicou
+-na letra foi escolhida 'Poppins', sans-serif e arial 
+- no espaçamento entre os conrainers, foi montado em colunas, com espaçamento de 65% para o lado esquerdo
+e 35% do lado direito
+- o menu vira hamburger depois que ele não cabe mais na tela
+- nos icones eu coloquei só o favicon e a logo do site
+
+
+UX-experiência do usuário
+- foi adiconado uma barra de pesquisa, que futuramente pode auxiliar muito a experiência do usuário no site
+- o efeito das noticias para quando você clica
