@@ -1,51 +1,52 @@
-const hamburger = document.querySelector('.hamburger');
-const menu = document.querySelector('.menu');
-
-hamburger.addEventListener('click', () => {
-    menu.classList.toggle('ativo');
-});
-//verificação do e-mail pra ver se o campo está completo
+//parte de verficação do email
 let mascara = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-let email = document.querySelector("#email")
-let mensagem_senha = document.querySelector("#mensagem_email")
+let email = document.querySelector("#email");
+let mensagem_email = document.querySelector("#mensagem_email");
+
 email.addEventListener("keyup", function () {
-    if (!mascara.test(email.value)) {
-        mensagem_senha.textContent = "o e-mail não está completo"
-        mensagem_senha.style.color = "red"
+    if (email.value === "") {
+        mensagem_email.textContent = "preencha o e-mail";
+        mensagem_email.style.color = "red";
+    } else if (!mascara.test(email.value)) {
+        mensagem_email.textContent = "e-mail incompleto ";
+        mensagem_email.style.color = "red";
     } else {
-        mensagem_senha.textContent = "o e-mail está correto"
-        mensagem_senha.style.color = "green"
+        mensagem_email.textContent = "e-mail correto ";
+        mensagem_email.style.color = "green";
     }
 });
-let emaill = document.querySelector("#email")
-let botaok = document.querySelector("#botao")
-let mensagem_senhaa = document.querySelector("#mensagem_email")
 
+let nome = document.querySelector("#nome");
+let botao = document.querySelector("#botao");
+let paragrafoh = document.querySelector("#paragrafoh");
+let mensagemfinal = document.querySelector("#mensagemfinal");
 
 botao.addEventListener("click", function () {
-    if (nome.value === "") {
-        paragrafoh.textContent = "Coloque um nome";
+
+    if (nome.value.trim() === "") {
+        paragrafoh.textContent = " coloque um nome";
         paragrafoh.style.color = 'red';
-        return;
+        return; 
     } else {
-        paragrafoh.textContent = ""; 
+        paragrafoh.textContent = " nome preenchido";
+        paragrafoh.style.color = 'green';
     }
 
-    if (emaill.value === "") {
-        mensagem_senhaa.textContent = "Coloque um e-mail";
-        mensagem_senhaa.style.color = 'red';
-        return;
+  
+    if (email.value.trim() === "") {
+        mensagem_email.textContent = " coloque um e-mail";
+        mensagem_email.style.color = 'red';
+        return; 
+    } else if (!mascara.test(email.value)) {
+        mensagem_email.textContent = " e-mail inválido";
+        mensagem_email.style.color = 'red';
+        return; 
     } else {
-        mensagem_senhaa.textContent = "";
+        mensagem_email.textContent = " e-mail válido";
+        mensagem_email.style.color = 'green';
     }
 
-    mensagemfinal.textContent = "Formulário preenchido com sucesso!";
+    // se tudo deu certo
+    mensagemfinal.textContent = "formulário preenchido com sucesso!";
     mensagemfinal.style.color = 'green';
 });
-//esse código é para verificar se o campo do e-mail está devidamente completo, com letra, @, .
-//foi criado a varivael mascara que recebeu todos os componentes que devem ter num e=mail
-//a variavel email, que tem o id email(mencionado no html)
-//e a variavel mensagem senha para mostrar quando o e-mail está certo ou não
-//o keyup vai observar o que está sendo escrito dentro do input email 
-//o if diz= se esses componentes de mascara não estiverem dentro do input, ent está errado
-//e o else é basicamente o contrario
