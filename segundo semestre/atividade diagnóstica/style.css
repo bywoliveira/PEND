@@ -1,0 +1,358 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+header {
+    background-color: rgb(30, 80, 145);
+    padding: 8px;
+}
+
+.foto_eu{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-height: 10vh;
+}
+
+.foto_eu img {
+    width: 10%;
+    object-fit: contain;
+}
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+
+.espaco_quadrado {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    background: rgba(50, 39, 176, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.espaco_quadrado:hover {
+    transform: scale(1.02);
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 65fr 35fr;
+    gap: 30px;
+}
+
+.dentro_noticia {
+    text-align: left;
+    padding: 20px;
+}
+
+.planta-content h4 {
+    color: #2e7d32;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #66bb6a;
+    padding-bottom: 10px;
+}
+
+.texto_noticia p {
+    line-height: 1.6;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.imagem_noticia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.imagem_noticia img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Mantém o grid 65% / 35% */
+.conteudo {
+    display: grid;
+    grid-template-columns: 65fr 35fr;
+    gap: 30px;
+    align-items: start;
+    /* alinha os topos das colunas */
+}
+
+/* Cada coluna empilha as notícias verticalmente */
+.noticias-esquerda,
+.noticias-direita {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Remove o .efeito que não está sendo usado */
+/* Se você quiser manter, pode, mas não precisa mais */
+
+
+
+footer {
+    text-align: center;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* desktop  */
+@media (max-width: 900px) {
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .espaco_noticia {
+        grid-template-columns: 1fr;
+    }
+
+    .imagem_noticia img {
+        height: 250px;
+    }
+}
+
+/* Tablet (até 768px) */
+@media (max-width: 768px) {
+
+    /* Header: logo e menu em coluna */
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        max-height: none;
+        flex-wrap: wrap;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    /* Mostra o botão hambúrguer */
+    .hamburger {
+        display: block;
+        color: white;
+        margin-left: auto;
+    }
+
+    /* Esconde o menu por padrão no mobile */
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        background-color: gray;
+        padding: 10px 0;
+    }
+
+    /* Quando o JS adiciona a classe 'ativo', o menu aparece */
+    .menu.ativo {
+        display: flex;
+    }
+
+    /* Conteúdo vira coluna única (esquerda e direita empilhados) */
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    /* Cada notícia também vira coluna única */
+    .espaco_noticia {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
+
+.imagem_noticia img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.noticias-direita .espaco_noticia {
+    grid-template-columns: 1fr;
+}
+
+/* desktop  */
+@media (max-width: 900px) {
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .espaco_noticia {
+        grid-template-columns: 1fr;
+    }
+
+    .imagem_noticia img {
+        height: 250px;
+    }
+}
+
+/* tablet */
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 130px;
+    }
+
+    .hamburger {
+        display: block;
+        color: white;
+        margin-left: auto;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        background-color: gray;
+        padding: 10px 0;
+    }
+
+    .menu.ativo {
+        display: flex;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .imagem_noticia img {
+        height: 200px;
+    }
+}
+
+/* celularzin pequeno  */
+@media (max-width: 400px) {
+    .logo input[type="text"] {
+        width: 100%;
+    }
+
+    .imagem_noticia img {
+        height: 160px;
+    }
+}
+/* tablet */
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 130px;
+    }
+
+    .hamburger {
+        display: block;
+        color: white;
+        margin-left: auto;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        background-color: gray;
+        padding: 10px 0;
+    }
+
+    .menu.ativo {
+        display: flex;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .imagem_noticia img {
+        height: 200px;
+    }
+}
+
+/* celularzin pequeno  */
+@media (max-width: 400px) {
+    .logo input[type="text"] {
+        width: 100%;
+    }
+
+    .imagem_noticia img {
+        height: 160px;
+    }
+}
