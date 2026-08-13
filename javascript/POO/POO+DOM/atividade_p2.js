@@ -1,0 +1,58 @@
+class Produto{
+    constructor(nome, preco, categoria, desconto){
+        this.nome= nome;
+        this.preco = preco;
+        this.categoria = categoria;
+        this.desconto = desconto;
+    }
+     aplicarDesconto() {
+    return this.preco - (this.preco * this.desconto / 100);
+    }
+    exibir(){
+          console.log(`${this.nome} é um produto`);
+    }
+}
+
+class Mercadin{
+     constructor(){
+        this.produtos=[];
+    }
+    adicionarProduto(produto){
+        this.produtos.push(produto);
+    }
+    // agora vai ser a parte de conectar com o HTML
+    exibirNaTela() {
+        const resultado = document.querySelector("#resultado");
+
+        resultado.innerHTML = "";
+
+        this.produtos.forEach(produto=>{
+
+             resultado.innerHTML += `
+              <div>
+                <p> ${produto.nome}</p>
+                <p>Idade: ${produto.preco}</p>
+                <p>Curso: ${produto.categoria}</p>
+                <p>Matrícula: ${produto.desconto}</p>
+              </div>  
+   `;
+    });
+   }
+}
+
+const mercadin = new Mercadin();
+const nome = document.querySelector('#nome');
+const preco = document.querySelector('#preco');
+const categoria = document.querySelector('#categoria');
+const desconto = document.querySelector('#desconto');
+const botaoCadastrar = document.querySelector('#botaoCadastrar');
+
+
+botaoCadastrar.addEventListener("click", function () {
+    const produto = new Produto(nome.value, preco.value, categoria.value, desconto.value);
+
+    mercadin.adicionarProduto(produto);
+    mercadin.exibirNaTela();
+
+
+});
