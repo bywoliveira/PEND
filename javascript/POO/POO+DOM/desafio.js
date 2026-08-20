@@ -1,24 +1,28 @@
-class Produto{
-    constructor(nome, preco, categoria, desconto){
-        this.nome= nome;
+class Produto {
+    constructor(nome, preco, categoria, desconto) {
+        this.nome = nome;
         this.preco = preco;
         this.categoria = categoria;
         this.desconto = desconto;
     }
-     aplicarDesconto() {
-    return this.preco - (this.preco * this.desconto / 100);
+    aplicarDesconto() {
+        return this.preco - (this.preco * this.desconto / 100);
     }
-    exibir(){
-          console.log(`${this.nome} é um produto`);
+    exibir() {
+        console.log(`${this.nome} é um produto`);
     }
 }
 
-class Mercadin{
-     constructor(){
-        this.produtos=[];
+class Mercadin {
+    constructor() {
+        this.produtos = [];
     }
-    adicionarProduto(produto){
+    adicionarProduto(produto) {
         this.produtos.push(produto);
+    }
+    excluirProduto(indice) {
+        this.produtos.splice(indice, 1);
+        this.exibirNaTela();
     }
     // agora vai ser a parte de conectar com o HTML
     exibirNaTela() {
@@ -26,18 +30,19 @@ class Mercadin{
 
         resultado.innerHTML = "";
 
-        this.produtos.forEach(produto=>{
+        this.produtos.forEach((produto, indice) => {
 
-             resultado.innerHTML += `
+            resultado.innerHTML += `
               <div>
-                <p> ${produto.nome}</p>
+                <p>Nome: ${produto.nome}</p>
                 <p>Preço: ${produto.preco}</p>
                 <p>Categoria: ${produto.categoria}</p>
                 <p>Desconto: ${produto.desconto}</p>
+                <p><button onclick="mercadin.excluirProduto(${indice})"> Excluir </button></p>
               </div>  
    `;
-    });
-   }
+        });
+    }
 }
 
 const mercadin = new Mercadin();
