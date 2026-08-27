@@ -1,0 +1,23 @@
+areaFoto.addEventListener("drop", function (event) {
+
+    event.preventDefault();
+
+    const arquivo = event.dataTransfer.files[0];
+
+    if (arquivo.type.startsWith("image/")) {
+
+        const imagem = document.createElement("img");
+
+        imagem.src = URL.createObjectURL(arquivo);
+
+        areaFoto.innerHTML = "";
+
+        areaFoto.appendChild(imagem);
+
+    } else {
+
+        alert("Por favor, arraste uma imagem.");
+
+    }
+
+});

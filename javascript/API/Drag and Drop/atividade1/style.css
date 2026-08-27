@@ -1,0 +1,307 @@
+/* ===== Paleta USP/FUVEST (com mais presença de azul) =====
+   --azul-usp:    azul institucional, agora também no cabeçalho
+   --azul-medio:  tom intermediário, usado no quadro informativo
+   --azul-suave:  azul claro, fundo do quadro informativo e da página
+   --fundo:       fundo da página com leve tom azulado
+   --branco:      cartão do formulário
+   --texto:       cinza-chumbo bem escuro, para boa leitura
+   --texto-sutil: cinza-azulado escuro, para legendas (mais escuro que antes)
+*/
+:root {
+    --azul-usp: #1F3E6E;
+    --azul-medio: #4C6FA5;
+    --azul-suave: #DCE7F5;
+    --azul-linha: #C3D4EA;
+    --fundo: #EDF2FA;
+    --branco: #FFFFFF;
+    --texto: #1A1A1A;
+    --texto-sutil: #44526B;
+    --borda: #C9D6E8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--fundo);
+    color: var(--texto);
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* títulos usam uma serifada discreta, só para dar formalidade sem pesar */
+.topo-titulo,
+.instrucao,
+h1, h2, h3 {
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+/* ===== Cabeçalho / menu ===== */
+.topo {
+    background-color: var(--azul-usp);
+    border-bottom: 1px solid var(--azul-usp);
+}
+
+.topo-conteudo {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 22px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topo-titulo {
+    color: var(--branco);
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+/* espaço reservado para a logo da USP */
+.logo-espaco {
+    display: flex;
+    align-items: center;
+}
+
+.logo-placeholder {
+    width: 56px;
+    height: 56px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco);
+    font-family: Arial, sans-serif;
+    font-size: 0.55rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+/* quando a imagem da logo for adicionada, basta trocar o <span> por <img>
+   dentro de .logo-espaco e remover a classe .logo-placeholder */
+
+/* ===== Conteúdo principal ===== */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 64px 20px;
+}
+
+.conteudo {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    max-width: 920px;
+    width: 100%;
+}
+
+.cartao {
+    background-color: var(--branco);
+    border: 1px solid var(--borda);
+    border-top: 3px solid var(--azul-usp);
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(31, 62, 110, 0.08);
+    padding: 56px 56px;
+    flex: 1 1 55%;
+    min-width: 0;
+}
+
+/* ===== Quadro informativo ===== */
+.info {
+    background-color: var(--azul-suave);
+    border: 1px solid var(--azul-linha);
+    border-radius: 6px;
+    padding: 40px 36px;
+    flex: 1 1 40%;
+    min-width: 0;
+    color: var(--texto);
+}
+
+.info h2 {
+    color: var(--azul-usp);
+    font-size: 1.15rem;
+    margin: 0 0 16px;
+    font-weight: 600;
+}
+
+.info h3 {
+    color: var(--azul-usp);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 28px 0 10px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.info p {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: var(--texto);
+    margin: 0;
+}
+
+.lista-documentos {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--texto);
+}
+
+.lista-documentos li {
+    margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+    .conteudo {
+        flex-direction: column;
+    }
+
+    .cartao,
+    .info {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 8px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: var(--texto-sutil);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+form input {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 1.05rem;
+    padding: 14px 16px;
+    border: none;
+    border-bottom: 1px solid var(--borda);
+    border-radius: 0;
+    color: var(--texto);
+    background-color: transparent;
+    transition: border-color 0.2s ease;
+}
+
+form input:focus {
+    outline: none;
+    border-bottom: 1px solid var(--azul-usp);
+    background-color: transparent;
+}
+
+.instrucao {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: var(--texto-sutil);
+    margin-top: 40px;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--borda);
+    margin: 0 0 28px;
+}
+
+/* ===== Área de arrastar e soltar ===== */
+#estacao_arquivos {
+    border: 1px dashed var(--azul-medio);
+    border-radius: 6px;
+    background-color: var(--fundo);
+    padding: 40px 16px;
+    text-align: center;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+#estacao_arquivos.dragover {
+    background-color: var(--azul-suave);
+    border-color: var(--azul-usp);
+}
+
+.dropzone-texto {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--texto-sutil);
+    margin: 0;
+}
+
+/* ===== Lista de arquivos adicionados ===== */
+#lista_arquivos {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#lista_arquivos li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    border-bottom: 1px solid var(--borda);
+    border-radius: 0;
+    padding: 10px 4px;
+    font-size: 0.9rem;
+    color: var(--texto);
+}
+
+#lista_arquivos li button {
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    color: var(--texto-sutil);
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    padding: 2px 8px;
+}
+
+#lista_arquivos li button:hover {
+    color: var(--azul-usp);
+}
+.logo-espaco img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: var(--branco);
+    padding: 4px;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 520px) {
+    .cartao,
+    .info {
+        padding: 36px 26px;
+    }
+
+    .topo-titulo {
+        font-size: 1.15rem;
+    }
+
+    .logo-placeholder {
+        width: 44px;
+        height: 44px;
+    }
+}

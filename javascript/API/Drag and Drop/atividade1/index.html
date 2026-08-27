@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isenção FUVEST</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header class="topo">
+        <div class="topo-conteudo">
+            <span class="topo-titulo">Isenção FUVEST</span>
+            <div class="logo-espaco">
+                <!-- lembrar de colocar a logo da usp aqui -->
+                <img src="img/usp_logo.jpg" alt="logo USP">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="conteudo">
+            <aside class="info">
+                <h2>Sobre a isenção</h2>
+                <p>
+                  A isenção da FUVEST é destinada aqueles que comprovem que por motivo de renda
+                  não consigam pagar a prova. (Atualmente no valor de 228,00)
+                </p>
+
+                <h3>Quem tem direito</h3>
+                <p>
+                   Estudantes de escola pública ou bolsistas integrais em escolas particulares, 
+                   com renda per-capita de 1,5 salários mínimos tem direito a isenção.
+                </p>
+
+                <h3>Documentos necessários</h3>
+                <ul class="lista-documentos">
+                    <li>Holerites ou comprovante de renda </li>
+                    <li>Conta de água </li>
+                    <li>Declaração escolar </li>
+                </ul>
+            </aside>
+
+            <div class="cartao">
+                <form>
+                    <label>
+                        Nome:
+                        <input type="text" name="nome">
+                    </label>
+
+                    <label>
+                        CPF:
+                        <input type="number" name="cpf">
+                    </label>
+                </form>
+
+                <p class="instrucao">Adicione arquivos com extensão .pdf de holerites, conta de água e declaração
+                    escolar</p>
+                <hr>
+
+                <div id="estacao_arquivos">
+                    <p class="dropzone-texto">Arraste o seu documento até aqui</p>
+                </div>
+
+                <ul id="lista_arquivos"></ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
