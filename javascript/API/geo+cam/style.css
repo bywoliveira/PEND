@@ -1,0 +1,96 @@
+/* ===== Cores base ===== */
+:root {
+    --verde-claro: #a8d5aa;
+    --verde-escuro: #2e7d32;
+    --verde-suave: #f1f8f1;
+    --branco: #ffffff;
+    --cinza-texto: #4a4a4a;
+}
+
+/* ===== Reset simples ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--branco);
+    color: var(--cinza-texto);
+    line-height: 1.5;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== Menu ===== */
+nav {
+    background-color: var(--branco);
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 0;
+    margin: 0 -20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: var(--verde-escuro);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95em;
+    padding: 6px 4px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.25s ease;
+}
+
+nav ul li a:hover {
+    border-color: var(--verde-claro);
+}
+
+/* ===== Cabeçalhos ===== */
+h1 {
+    color: var(--verde-escuro);
+    font-size: 1.15em;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 32px;
+    margin-bottom: 6px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 0.95em;
+    color: var(--cinza-texto);
+    margin-bottom: 16px;
+}
+
+/* ===== Câmera ===== */
+#camera {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    margin: 12px auto 24px;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== Mensagens de localização ===== */
+#aprovadoloc,
+#reprovadoloc {
+    font-size: 0.95em;
+    font-weight: 500;
+    padding: 10px 14px;
+    margin: 6px 0 24px;
+    border-radius: 6px;
+    background-color: var(--verde-suave);
+    border-left: 3px solid currentColor;
+}

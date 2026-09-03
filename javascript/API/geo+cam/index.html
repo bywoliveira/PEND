@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de recebimento de compras</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <nav>
+        <ul>
+            <li><a href="#titulo-camera">Câmera</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+        </ul>
+    </nav>
+
+    <h1>Registro de recebimento de compras</h1>
+    <h2>Sobre o site: o intuito do site é registrar a pessoa que rebece suas compras de maneira rápida,
+        com o intuito de diminuir ocasiões que compras sejam entregadas para pessoas erradas.
+    </h2>
+
+    <h1 id="titulo-camera">Câmera</h1>
+    <h2>Registro de quem recebeu o pacote</h2>
+    <video id="camera" autoplay></video>
+
+    <h1 id="localizacao">Localização</h1>
+    <p id="aprovadoloc" style="color:green">Localização aprovada</p>
+    <p id="reprovadoloc" style="color:red">Localização reprovada, não é possível determinar o endereço do recebido</p>
 </body>
+<script src="script.js"></script>
+
 </html>
+
+
+
