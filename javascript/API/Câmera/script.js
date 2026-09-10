@@ -17,8 +17,8 @@ navigator.mediaDevices.getUserMedia({
 });
 
 botao.addEventListener("click", function(){
-    canvas.width = video.videoWidth;
-    canvas.height = video.videoHeight;
+    canvas.width = video.clientWidth;
+    canvas.height = video.clientHeight;
 
     const contexto = canvas.getContext("2d");
 

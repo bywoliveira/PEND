@@ -24,36 +24,6 @@ body {
     padding: 0 20px;
 }
 
-/* ===== Menu ===== */
-nav {
-    background-color: var(--branco);
-    border-bottom: 1px solid #e0e0e0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 14px 0;
-    margin: 0 -20px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-}
-
-nav ul li a {
-    color: var(--verde-escuro);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95em;
-    padding: 6px 4px;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.25s ease;
-}
-
-nav ul li a:hover {
-    border-color: var(--verde-claro);
-}
 
 /* ===== Cabeçalhos ===== */
 h1 {
@@ -93,4 +63,29 @@ h2 {
     border-radius: 6px;
     background-color: var(--verde-suave);
     border-left: 3px solid currentColor;
+}
+/* ===== Botão ===== */
+#botao {
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 0.95em;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 auto 20px;
+    display: block;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+/* Quando passar o mouse */
+#botao:hover {
+    background-color: #256628;
+    transform: translateY(-1px);
+}
+
+/* Quando clicar */
+#botao:active {
+    transform: translateY(0);
 }

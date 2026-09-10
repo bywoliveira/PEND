@@ -9,12 +9,7 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="#titulo-camera">Câmera</a></li>
-            <li><a href="#localizacao">Localização</a></li>
-        </ul>
-    </nav>
+   
 
     <h1>Registro de recebimento de compras</h1>
     <h2>Sobre o site: o intuito do site é registrar a pessoa que rebece suas compras de maneira rápida,
@@ -23,7 +18,10 @@
 
     <h1 id="titulo-camera">Câmera</h1>
     <h2>Registro de quem recebeu o pacote</h2>
-    <video id="camera" autoplay></video>
+    <video id="camera" autoplay style="width: 200px;"></video><br>
+    <canvas id ="canvas" style="display: none"></canvas>
+    <button id="botao">Tirar foto</button><br>
+    <img id="foto">
 
     <h1 id="localizacao">Localização</h1>
     <p id="aprovadoloc" style="color:green">Localização aprovada</p>
